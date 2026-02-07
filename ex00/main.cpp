@@ -30,4 +30,6 @@ int main()
 
     delete wrongMeta;
     delete wrongI;
+
+    return (0);
 }
