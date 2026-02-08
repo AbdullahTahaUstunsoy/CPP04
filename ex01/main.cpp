@@ -23,6 +23,8 @@ int main()
     while(i < 4)
         delete animals[i++];
 
+    std::cout << "Deep copy test.. " << std::endl;
+ 
 
 
         
