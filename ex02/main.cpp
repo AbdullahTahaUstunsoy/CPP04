@@ -2,15 +2,8 @@
 #include "Dog.hpp"
 #include <iostream>
 
-//Amaç: “Abstract class + polymorphism” birlikte çalışıyor mu ?
-
 int main()
 {
-    /* 
-    Animal a1; stackte veya
-    Animal *a2 = new Animal(); heapte abstract class'tan nesne oluşmaz
-    */
-
     int i = 0;
     std::cout << BLUE << "Creating animals..."<< RESET << std::endl;
     const Animal* animals[4];
