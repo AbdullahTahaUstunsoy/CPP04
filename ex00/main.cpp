@@ -5,7 +5,7 @@
 
 int main()
 {
-    std::cout << "----- Correct implementation test: Testing Animal, Cat, and Dog -----" << std::endl;
+    std::cout << BLUE << "----- Correct implementation test: Testing Animal, Cat, and Dog -----" << RESET << std::endl;
     const Animal* meta = new Animal();
     const Animal* i = new Cat();
     const Animal* j = new Dog();
@@ -20,7 +20,7 @@ int main()
     delete i;
     delete j;
 
-    std::cout << "----- Wrong implementation test: WrongAnimal and WrongCat -----" << std::endl;
+    std::cout << BLUE << "----- Wrong implementation test: WrongAnimal and WrongCat -----" << RESET << std::endl;
     const WrongAnimal* wrongMeta = new WrongAnimal();
     const WrongAnimal* wrongI = new WrongCat();
     std::cout << wrongMeta->getType() << " " << std::endl;

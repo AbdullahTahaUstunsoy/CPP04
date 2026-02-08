@@ -1,6 +1,9 @@
 #ifndef ANIMAL_HPP
 #define ANIMAL_HPP
 
+#define RESET   "\033[0m"
+#define BLUE    "\033[34m"
+
 #include <string>
 
 class Animal

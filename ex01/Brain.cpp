@@ -3,6 +3,12 @@
 
 Brain::Brain()
 {
+    int i = 0;
+    while(i < 100)
+    {
+        ideas[i] = "";
+        i++;
+    }
     std::cout << "Default constructor called for Brain" << std::endl;
 }
 

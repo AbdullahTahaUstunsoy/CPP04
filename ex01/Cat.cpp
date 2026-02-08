@@ -30,8 +30,8 @@ Cat& Cat::operator=(const Cat& other)
 
 Cat::~Cat()
 {
-    std::cout << "Destructor called for Cat" << std::endl;
     delete brain;
+    std::cout << "Destructor called for Cat" << std::endl;
 }
 
 void Cat::makeSound() const
