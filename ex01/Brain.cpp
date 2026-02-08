@@ -31,7 +31,7 @@ Brain& Brain::operator=(const Brain& other)
         int i = 0;
         while(i < 100)
         {
-            ideas[i] = other.ideas[i]; //Shallow copy gibi gözüküyor ama aslında deep copy yapılıyor.
+            ideas[i] = other.ideas[i];
             i++;
         }
     }

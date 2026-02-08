@@ -2,7 +2,7 @@
 #include "Cat.hpp"
 #include <iostream>
 
-Cat::Cat() //Animal("Cat") yapmadım çünkü Animal Cat'i bilmemeli, gerek yok oop'ye göre
+Cat::Cat()
 {
     type = "Cat";
     std::cout << "Default constructor called for Cat" << std::endl;

@@ -22,8 +22,8 @@ Dog& Dog::operator=(const Dog& other)
     if (this != &other)
     {
         Animal::operator=(other);
-        delete brain; // eski Brain’i sil
-        brain = new Brain(*other.brain); // yenisini Brain oluştur
+        delete brain;
+        brain = new Brain(*other.brain);
     }
     return *this;
 }
