@@ -1,10 +1,16 @@
 #include "Cat.hpp"
 #include "Dog.hpp"
-#include "WrongCat.hpp"
 #include <iostream>
+
+//Amaç: “Abstract class + polymorphism” birlikte çalışıyor mu ?
 
 int main()
 {
+    /* 
+    Animal a1; stackte veya
+    Animal *a2 = new Animal(); heapte abstract class'tan nesne oluşmaz
+    */
+
     int i = 0;
     std::cout << BLUE << "Creating animals..."<< RESET << std::endl;
     const Animal* animals[4];
@@ -47,15 +53,7 @@ int main()
     cat2.setIdea(0, "I want some milk!");
     std::cout << "Cat1's idea: " << cat1.getIdea(0) << std::endl;
     std::cout << "Cat2's idea: " << cat2.getIdea(0) << std::endl;
-
     std::cout << "---------------------------------" << std::endl;
-
-    std::cout << BLUE << "Incorrect polymorphism implementation" << RESET << std::endl;
-    WrongAnimal* wrongAnimal = new WrongCat();
-    wrongAnimal->makeSound();
-    std::cout << "---------------------------------" << std::endl;
-
-    delete wrongAnimal;
 
     return (0);
 }
